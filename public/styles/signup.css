@@ -18,13 +18,18 @@
 body{
   background-color: #F1F1F1;
 }
+h2{
+  text-align: center;
+}
+
 /*signUp Form*/
 .formContainer{
   background-color: white;
-  width: 50%;
+  width: 40%;
   height: 60vh;
   margin: auto;
   margin-top: 5rem;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: space-around;
@@ -42,7 +47,13 @@ body{
   border-radius: 10px;
   padding: 1rem;
 }
-
+.fas{
+  color:dimgray;
+}
+.button{
+  display: flex;
+  justify-content: center;
+}
 .signup{
   border: solid #FF7556;
   border-radius: 20px;
