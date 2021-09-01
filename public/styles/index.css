@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*NavBar Style*/
+.navbar {
+  background-color: #313131;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 60px;
+}
+
+.searchBox {
+  border: none;
+  border-radius: 10px;
+  background: url("../assets/search-24.png") no-repeat left center;
+  background-color: white;
+  outline: medium none;
+  width: 40%;
+  padding: .6rem 0 .6rem 1.7rem;
+}
+
+.buttonsList{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 20%;
+}
+
+.loginBtn{
+  border: solid #FF7556;
+  border-radius: 20px;
+  padding: .4rem 2rem;
+  background-color: #313131;
+  color: #FFFFFF;
+  font-weight: 1000;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.signupBtn{
+  border: solid #FF7556;
+  border-radius: 20px;
+  padding: .4rem 2rem;
+  background-color: #FF7556;
+  color: #FFFFFF;
+  font-weight: 1000;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.fas{
+  color: white;
+  padding-left: .3rem;
+}
+
+/*Main Section*/
+body{
+  background-color: #F1F1F1;
+}
+
+.postsSpace{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+.post{
+  background-color: white;
+  width: 50%;
+  margin: 1rem;
+  padding: 1rem;
+}
+.user{
+  display: flex;
+  align-items: center;
+}
+.userInfo{
+  padding: .5rem;
+}
+.userImg{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.username{
+  text-decoration: none;
+  color: black;
+}
+.postTime{
+  font-size: 12px;
+}
+
+.postDetails{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: .5rem 1rem;
+}
+.postQ{
+  padding-bottom: .5rem;
+}
