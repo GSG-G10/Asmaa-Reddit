@@ -6,8 +6,11 @@ CREATE TABLE IF NOT EXISTS users(
   id SERIAL PRIMARY KEY,
   username VARCHAR(100) UNIQUE NOT NULL,
   email VARCHAR(200) UNIQUE NOT NULL,
-  password VARCHAR(100) NOT NULL,
-  img_url TEXT
+  pass VARCHAR(100) NOT NULL,
+  img_url TEXT,
+  first_name VARCHAR(100),
+  last_name VARCHAR(100),
+  bio TEXT
 );
 
 CREATE TABLE IF NOT EXISTS posts(
@@ -31,8 +34,8 @@ CREATE TABLE IF NOT EXISTS comments(
   FOREIGN KEY (post_id) REFERENCES posts(id)
 );
 
-INSERT INTO users (username, email, password) VALUES ('asmaaamin', 'asmaa@gmail.com', 'Qwe*123');
-INSERT INTO users (username, email, password) VALUES ('amira', 'amira@gmail.com', 'Qwe*123');
+INSERT INTO users (username, email, pass) VALUES ('asmaaamin', 'asmaa@gmail.com', 'Qwer*1234');
+INSERT INTO users (username, email, pass) VALUES ('amira', 'amira@gmail.com', 'Qwe*123');
 
 INSERT INTO posts (post_text, likes, user_id) VALUES (
   'The way to get started is to quit talking and begin doing. -Walt Disney',
