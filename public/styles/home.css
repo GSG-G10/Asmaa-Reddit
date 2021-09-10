@@ -21,7 +21,7 @@
   background: url("../assets/search-24.png") no-repeat left center;
   background-color: white;
   outline: medium none;
-  width: 40%;
+  width: 30%;
   padding: .6rem 0 .6rem 1.7rem;
 }
 
@@ -29,34 +29,58 @@
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-  width: 20%;
-}
-
-.loginBtn{
-  border: solid #FF7556;
-  border-radius: 20px;
-  padding: .4rem 2rem;
-  background-color: #313131;
-  color: #FFFFFF;
-  font-weight: 1000;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-.signupBtn{
-  border: solid #FF7556;
-  border-radius: 20px;
-  padding: .4rem 2rem;
-  background-color: #FF7556;
-  color: #FFFFFF;
-  font-weight: 1000;
-  font-size: 16px;
-  text-decoration: none;
+  width: 10%;
 }
 
 .fas{
   color: white;
   padding-left: .3rem;
+}
+
+.dropBtn{
+  display: flex;
+  justify-content: space-between;
+}
+.navUsername{
+  color: white;
+  padding-left: .5rem;
+}
+.addPostContainer{
+  background-color: white;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+.addPostForm{
+  width: 90%;
+  margin: auto;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.postInput{
+  padding: .7rem 5rem .7rem .5rem;
+  margin-bottom: .5rem;
+  border: lightgray;
+  border-radius: 10px;
+  background-color: #F1F1F1;
+}
+.submitPost{
+  border: solid #FF7556;
+  border-radius: 20px;
+  padding: .4rem 2rem;
+  color: #FF7556;
+  background-color: white;
+  font-weight: 1000;
+  font-size: 14px;
+  text-decoration: none;
+  width:20%;
 }
 
 /*Main Section*/

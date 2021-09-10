@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/81c816aea5.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/png" href="./assets/icon.png" />
-    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
     <title>Reddit</title>
   </head>
   <body>
@@ -15,14 +15,25 @@
         <a href="/"><img src="./assets/redditLogo.png" /></a>
         <input class="searchBox" type="text" placeholder="Seach Reddit" />
         <ul class="buttonsList">
-          <li><a href="login.html" class="loginBtn">Log In</a></li>
-          <li><a href="signup.html" class="signupBtn">Sign Up</a></li>
+          <li><a href='#'><i class="fas fa-comment-dots"></i></a></li>
+          <li><a href="#"><i class="fas fa-plus"></i></a></li>
+          <li><a href="#"><i class="fas fa-bell"></i></a></li>
         </ul>
         <div class="dropdown">
-          <div class="dropBtn"><i class="fas fa-user"></i><i class="fas fa-angle-down"></i></div>
+          <div class="dropBtn">
+            <i class="fas fa-user"></i>
+            <div class="navUsername"></div>
+            <i class="fas fa-angle-down"></i>
+          </div>
         </div>
       </nav>
     </header>
+    <section class="addPostContainer">
+      <form class="addPostForm" action="/addPost" method="post">
+        <input class="postInput" name="postText" placeholder="Create Post">
+        <input class="submitPost" type="submit" value="Post">
+      </form>
+    </section>
     <main class="postsSpace"></main>
     <script type="text/javascript" src="./script/index.js"></script>
   </body>

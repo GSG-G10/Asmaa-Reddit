@@ -3,7 +3,7 @@ require('env2')('.env');
 const { Pool } = require('pg');
 
 const {
-  DATABASE_URL, DB_URL, DB_TEST_URL, NODE_ENV,
+  DATABASE_URL, DB_URL, TEST_DB_URL, NODE_ENV,
 } = process.env;
 
 let dburl = '';
@@ -16,7 +16,7 @@ switch (NODE_ENV) {
     dburl = DB_URL;
     break;
   case 'test':
-    dburl = DB_TEST_URL;
+    dburl = TEST_DB_URL;
     break;
   default:
     throw new Error('No Database is founded !');
