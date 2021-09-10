@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/81c816aea5.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/png" href="./assets/icon.png" />
     <link rel="stylesheet" href="./styles/login.css" />
-    <title>Reddit Log In</title>
+    <title>Reddit | Log In</title>
   </head>
   <body>
     <header>
@@ -16,7 +16,7 @@
       </nav>
     </header>
     <div class="formContainer">
-      <form class="formDetails" action="/login" method="post">
+      <form class="formDetails" action="/signin" method="post">
         <h2>Log in</h2>
         <div class="formRow">
           <label for="email">Your Email</label>
@@ -47,11 +47,11 @@
         <div class="button">
           <input
             type="submit"
-            name="login"
             class="login"
             value="Log In"
           />
         </div>
+        <a class="goSignup" href="signup.html">New to Reddit? Sign Up</a>
       </form>
     </div>
   </body>

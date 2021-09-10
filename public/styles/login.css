@@ -63,3 +63,8 @@ h2{
   font-size: 16px;
   cursor: pointer;
 }
+.goSignup{
+  text-align: center;
+  text-decoration: none;
+  color: #FF7556;
+}
